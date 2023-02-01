@@ -285,6 +285,7 @@ S'entraîner à faire des regex sur le site [regex101.com](regex101.com) (par ex
 Lien : [Un regex pour reconnaître les flottants](https://regex101.com/r/qj63Wc/1)
 
 Une solution : `[+-]?\d+\.\d+([eE][+-]?[0-9]+)?`
+
 ### Question b
 
 cf. fichier python.
