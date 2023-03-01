@@ -3,16 +3,19 @@ import re
 import sys
 
 regexExpressions = [
-    # Whitespace
+    # comment and whitespace
+    (r'\/\/[\s\S]*\n', 'COMMENT'),
     (r'[ \n\t]+', None),
 
-    # Example
+    #Special characters
+    (r'\;', 'TERMINATOR'),
     (r'\=', 'ASSIGN'),
+    (r'\+', 'ADDITION'),
+    (r'\-', 'SUBSTRACTION'),
+    (r'\*', 'MULTIPLICATION'),
+    (r'\/', 'DIVISION'),
 
-    # TODO: Add the other regexes for your lexems
-    # ...
 ]
-
 
 class Lexem:
     '''
