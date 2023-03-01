@@ -90,6 +90,7 @@ class Parser:
         self.expect("TERMINATOR")
 
 
+
     def parse_declaration(self):
         """
         Parses a declaration.
